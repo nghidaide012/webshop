@@ -1,0 +1,270 @@
+main
+{
+    width:100vw;
+
+
+}
+main h1
+{
+    text-align: center;
+    padding:20px;
+    margin:20px 10%;
+    border-bottom: 1px solid gray;
+}
+main p:not(.price)
+{
+    color:#aa9981;
+}
+.container
+{
+
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: flex-start;
+    gap:50px;
+}
+.category
+{
+    position: relative;
+    width:150px;
+    min-width:150px;
+
+}
+.product-list
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:60%;
+
+    padding:30px;
+}
+#product-wrap
+{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cart
+{
+    position: relative;
+    width:30%;
+
+    text-align: center;
+}
+li
+{
+    position:relative;
+    height:100%;
+    display:block;
+    padding:7px 0;
+}
+li a
+{
+    position:relative;
+    color:#aa9981;
+}
+li a:hover
+{
+    color:#aa9981;
+}
+li a:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #aa9981;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+li a:hover:after{
+    width: 100%;
+    left: 0;
+    background: #aa9981;
+  }
+input
+{
+
+    color:#ffffff;
+    background-color: #171717;
+    width:40%;
+    padding:5px 10px;
+    box-sizing: border-box;
+    border:none;
+    margin-bottom:30px;
+    transition: 400ms ease-in-out;
+}
+
+input:focus
+{
+    outline:none;
+}
+.product
+{
+    margin-top:30px;
+    width:150px;
+    position: relative;
+    text-align: center;
+    display:inline-block;
+    cursor: pointer;
+    padding-bottom:20px;
+    border-bottom:#aa9981 1px solid;
+
+}
+.product .title
+{
+    margin:0 0 20px 0;
+}
+.product .price
+{
+    margin-bottom:10px;
+}
+.product .add-button
+{
+    display:block;
+    opacity: 0;
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    right:0;
+    cursor: pointer;
+    border:none;
+    background-color: #171717;
+    color:whitesmoke;
+    padding: 2px 10px;
+    background-color: #aa9981;
+    border-radius: 5px;
+    transition: 200ms ease;
+
+}
+.product .add-button:hover
+{
+    background-color: #aa9981b4;
+}
+.product:hover .add-button
+{
+    opacity: 100;
+    bottom:0px;
+}
+.cart h1
+{
+    margin-bottom:30px;
+}
+.cart h2
+{
+    color:#171717;
+}
+.item
+{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    padding:0 30px;
+    height:30px;
+    cursor: pointer;
+    margin-bottom:30px;
+
+}
+.item .item-info
+{
+    display:flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width:200px;
+}
+.item .price-cart
+{
+    color:#aa9981;
+    position: absolute;
+    transition:all 300ms ease;
+    right:25px;
+}
+#item-container
+{
+    margin-bottom:40px;
+}
+.amount-button
+{
+    position: absolute;
+    left:20px;
+    opacity: 0;
+    background-color:#171717;
+    color:#aa9981;
+    border:none;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+.increase-button
+{
+    top:-15px;
+
+}
+.decrease-button
+{
+    bottom:0px;
+}
+.increase-button:hover
+{
+    color:red;
+
+}
+.decrease-button:hover
+{
+    color:red;
+}
+.item:hover .amount-button
+{
+    opacity: 100;
+    left:5px;
+
+}
+.delete-button
+{
+    position: absolute;
+    top:-5px;
+    right:0px;
+    opacity: 0;
+    background-color:#171717;
+    color:#aa9981;
+    border:none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 300ms ease;
+}
+.item:hover .price-cart
+{
+    right:60px;
+}
+.item:hover .delete-button
+{
+    opacity:100;
+    right:25px;
+}
+.place-order-button
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin-top:20px;
+    margin:auto;
+    padding:10px 20px;
+    background-color: #aa9981;
+    border-radius: 5%;
+    transition:100ms ease-in-out;
+}
+.place-order-button:hover
+{
+    background-color: #aa9981bb;
+}
+.place-order-button h2
+{
+    cursor: pointer;
+    color:whitesmoke;
+}

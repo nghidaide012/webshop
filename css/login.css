@@ -1,0 +1,60 @@
+main{
+    width:80vw;
+    height:60vh;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+
+}
+.error-message
+{
+    color:red;
+}
+#form
+{
+    display:block;
+    width:500px;
+    margin-bottom:20px;
+}
+label
+{
+    position: relative;
+    top:-10px;
+}
+input[type=username], input[type=password]
+{
+    color:#ffffff;
+    background-color: #171717;
+    width:100%;
+    padding:5px 10px;
+    box-sizing: border-box;
+    border:none;
+    border-bottom:1px solid grey;
+    margin-bottom:30px;
+    transition: 400ms ease-in-out;
+}
+input[type=username]:focus, input[type=password]:focus
+{
+    outline:none;
+    border-bottom:1px solid red;
+
+
+}
+input[type=submit]
+{
+    padding:5px 20px;
+    background-color: yellow;
+    transition:100ms ease-in-out;
+    border-radius: 5%;
+}
+input[type=submit]:hover
+{
+    box-shadow: 0 0 0 2px #171717, 0 0 0 3px yellow;
+}
+p a
+{
+    color:red;
+}

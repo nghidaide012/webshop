@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "genjiro";
+    src: url("../font/genjiro/Genjiro.ttf");
+}
+@font-face{
+    font-family: "Mono";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:wght@300&family=Space+Mono&display=swap'");
+}
+h1{
+    font-family: "genjiro";
+    font-weight: bold;
+    font-size: 32px;
+}
+h2{
+    font-family: "genjiro";
+    font-size:24px;
+    font-weight: bold;
+
+}
+h3{
+    font-family: 'Mono', monospace;
+    font-weight: bold;
+    font-size:18.72px;
+
+}
+
+h4{
+    font-family: 'Mono', monospace;
+    font-weight:900;
+}
+p, a{
+    font-family: 'Mono', monospace;
+    color:white;
+    text-decoration: none;
+}
+label
+{
+    font-family: 'Mono', monospace;
+    color:white;
+    text-decoration: none;
+}
+input[type=submit]
+{
+    font-family: 'Mono', monospace;
+
+    text-decoration: none;
+}
+body{
+    width:100vw;
+    background-color:#171717;
+    color:white;
+
+}
+header{
+    position:sticky;
+    width:80vw;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    top:0px;
+    margin-bottom:50px;
+    background-color: #171717;
+    z-index: 100;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding:15px 0;
+}
+nav{
+    display:flex;
+    gap:50px;
+
+}
+a{
+    font-weight: 600;
+    transition: 100ms ease-in-out;
+    
+}
+a:hover
+{
+    color:red;
+}
+
+.success
+{
+    color:greenyellow;
+}
+.error-message
+{
+    color:red;
+}
+.delete-button
+{
+    background-color:#171717;
+    color:rgb(255, 117, 117);
+    border:none;
+    cursor:pointer;
+    transition: 100ms ease-in;
+    padding:5px;
+}
+.delete-button:hover
+{
+    color:red;
+}

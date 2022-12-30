@@ -1,0 +1,128 @@
+main
+{
+    width:100vw;
+
+
+}
+.container
+{
+    margin-top:100px;
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+.left-container
+{
+    display: inline-block;
+    height:50%;
+
+}
+.left-container h3
+{
+    padding:15px;
+}
+
+.right-container
+{
+    display: inline-block;
+    height: 60%;
+    width:40%;
+
+}
+.right-container h3
+{
+    position:relative;
+    top:-30px;
+}
+
+input:not([type=submit], [type=file]), select
+{
+    color:#ffffff;
+    background-color: #171717;
+    width:100%;
+    padding:5px 10px;
+    box-sizing: border-box;
+    border:none;
+    border-bottom:1px solid grey;
+    margin-bottom:30px;
+    transition: 400ms ease-in-out;
+}
+input:not([type=submit], [type=file]):focus, select:focus
+{
+    outline:none;
+    border-bottom:1px solid red;
+}
+.customer-list
+{
+    width:100%;
+    min-width:600px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap:20px;
+    padding:20px 20px 20px 0;
+}
+.categories-list
+{
+    width:100%;
+    min-width:600px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap:20px;
+    padding:20px 20px 20px 0;
+}
+.products-list
+{
+    min-width:600px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+    padding:20px 20px 20px 0;
+}
+input[type=submit],button:not(.delete-button)
+{
+    margin-top:20px;
+    padding:5px 20px;
+    background-color: yellow;
+    border-radius: 5%;
+    transition:100ms ease-in-out;
+
+}
+input[type=submit]:hover,button:not(.delete-button):hover
+{
+    box-shadow: 0 0 0 2px #171717, 0 0 0 3px yellow;
+}
+.customer-list > *
+{
+    width:20%;
+}
+.categories-list > *
+{
+    width:20%;
+}
+.products-list > * > *:not(button, img)
+{
+    width:250px;
+}
+.products-list > * > button:not(.delete-button)
+{
+    width:100px;
+    margin:0 10px;
+}
+.order-container
+{
+    min-width:600px;
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+    gap:20px;
+    padding:20px 20px 20px 0;
+}
+.completed
+{
+    display: block;
+}
